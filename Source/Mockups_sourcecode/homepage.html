@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+
+
+        .auto-style1 {
+            width: 100%;
+            height: 18px;
+        }
+        .auto-style2 {
+            font-size: x-large;
+        }
+        .auto-style3 {
+            color: #00FFFF;
+        }
+        .auto-style4 {
+            width: 40%;
+            height: 300px;
+        }
+        .auto-style5 {
+            text-align: center;
+            width: 419px;
+        }
+        .auto-style6 {
+            text-align: center;
+            height: 36px;
+            width: 419px;
+        }
+        .auto-style7 {
+            width: 100%;
+            height: 45px;
+        }
+        .auto-style8 {
+            width: 177px;
+            color: #CC0066;
+        }
+        .auto-style10 {
+            width: 19px;
+            height: 18px;
+        }
+        .auto-style11 {
+            color: #006600;
+        }
+        .auto-style14 {
+            width: 30px;
+            height: 12px;
+            margin-left: 0px;
+        }
+        .auto-style16 {
+            width: 135px;
+        }
+        .auto-style19 {
+            width: 43px;
+            height: 23px;
+        }
+        .auto-style20 {
+            width: 19px;
+            height: 13px;
+        }
+        .auto-style21 {
+            text-align: center;
+            height: 30px;
+            width: 419px;
+        }
+        .auto-style22 {
+            width: 100%;
+            height: 38px;
+        }
+        .auto-style23 {
+            text-align: left;
+            width: 81px;
+            height: 12px;
+        }
+        .auto-style24 {
+            text-align: left;
+            width: 121px;
+            height: 12px;
+        }
+        .auto-style25 {
+            margin-left: 5px;
+        }
+        .auto-style26 {
+            width: 224px;
+            height: 12px;
+        }
+        .auto-style27 {
+            width: 27px;
+            height: 19px;
+        }
+        .auto-style28 {
+            height: 12px;
+        }
+        .auto-style29 {
+            width: 100%;
+            height: 422px;
+        }
+        .auto-style31 {
+            height: 28px;
+        }
+        .auto-style32 {
+            width: 74px;
+        }
+        .auto-style33 {
+            height: 28px;
+            width: 74px;
+        }
+        .auto-style35 {
+            width: 73px;
+        }
+        .auto-style36 {
+            height: 28px;
+            width: 73px;
+        }
+        .auto-style38 {
+            text-align: left;
+            width: 175px;
+        }
+        .auto-style39 {
+            width: 74px;
+            height: 8px;
+        }
+        .auto-style40 {
+            height: 8px;
+        }
+        .auto-style41 {
+            width: 73px;
+            height: 8px;
+        }
+        .auto-style42 {
+            text-align: left;
+            width: 177px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+    <div>
+    
+        <table class="auto-style1" style="background-image: url('img/logo.jpg'); font-size: 8px">
+            <tr>
+                <td class="auto-style2">
+                    <h1 class="auto-style3">Online Chat Application</h1>
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+    <table border="3" align="center" class="auto-style4">
+        <tr>
+            <td class="auto-style6">
+                <table class="auto-style7">
+                    <tr>
+                        <td class="auto-style8">Ashok Yaganti</td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td class="auto-style38">
+                            <img alt="" class="auto-style14" src="img/cont.png" /><a href="contacts.html">Add Contacts</a></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style42">
+                            <img alt="" class="auto-style10" src="img/person.png" /> <span class="auto-style11">I am available</span></td>
+                        <td class="auto-style16">&nbsp;</td>
+                        <td class="auto-style38">
+                            <img alt="" class="auto-style20" src="img/settings.png" /> Settings</td>
+                        <td>
+                            <img alt="" class="auto-style19" src="img/help.png" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style21">
+                <table class="auto-style22">
+                    <tr>
+                        <td class="auto-style23">
+                            <input type="button" value="Message" />
+                        </td>
+                        <td class="auto-style24">
+                            <input type="button" value="Video Call" />
+                        </td>
+                        <td class="auto-style26">
+                            <input type="text" CssClass="auto-style25" Width="61px">
+&nbsp;&nbsp;&nbsp;
+                            <img alt="" class="auto-style27" src="img/view.jpg" />&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                        <td class="auto-style28"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style5">
+                <table class="auto-style29">
+                    <tr>
+                        <td class="auto-style32">
+                            <asp:TreeView ID="TreeView1"  Height="118px" ImageSet="Contacts" NodeIndent="10">
+                                <HoverNodeStyle Font-Underline="False" />
+                                <Nodes>
+                                    <asp:TreeNode Text="Friends" Value="Friends">
+                                        <asp:TreeNode Text="Yateesh" Value="Yateesh"></asp:TreeNode>
+                                        <asp:TreeNode Text="Sasidhar" Value="Sasidhar"></asp:TreeNode>
+                                        <asp:TreeNode Text="Mohamed" Value="Mohamed"></asp:TreeNode>
+                                        <asp:TreeNode Text="Suresh" Value="Suresh"></asp:TreeNode>
+                                        <asp:TreeNode Text="Balakrishna" Value="Balakrishna"></asp:TreeNode>
+                                    </asp:TreeNode>
+                                </Nodes>
+                                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                <ParentNodeStyle Font-Bold="True" ForeColor="#5555DD" />
+                                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                            </asp:TreeView>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="auto-style35">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style32">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="auto-style35">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style32">
+                            <asp:TreeView ID="TreeView2"  ImageSet="News" NodeIndent="10" Height="100px">
+                                <HoverNodeStyle Font-Underline="True" />
+                                <Nodes>
+                                    <asp:TreeNode Text="ASE Team" Value="ASE Team">
+                                        <asp:TreeNode Text="Ashok" Value="Ashok"></asp:TreeNode>
+                                        <asp:TreeNode Text="Mohamed" Value="Mohamed"></asp:TreeNode>
+                                        <asp:TreeNode Text="Sasidhar" Value="Sasidhar"></asp:TreeNode>
+                                        <asp:TreeNode Text="Yateesh" Value="Yateesh"></asp:TreeNode>
+                                    </asp:TreeNode>
+                                </Nodes>
+                                <NodeStyle Font-Names="Arial" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                <ParentNodeStyle Font-Bold="False" />
+                                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                            </asp:TreeView>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="auto-style35">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style39"></td>
+                        <td class="auto-style40"></td>
+                        <td class="auto-style40"></td>
+                        <td class="auto-style40"></td>
+                        <td class="auto-style40"></td>
+                        <td class="auto-style41"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style32">
+                            <asp:TreeView ID="TreeView3"  ImageSet="Events">
+                                <HoverNodeStyle Font-Underline="False" ForeColor="Red" />
+                                <Nodes>
+                                    <asp:TreeNode Text="Cricket Team" Value="Cricket Team">
+                                        <asp:TreeNode Text="Suresh" Value="Suresh"></asp:TreeNode>
+                                        <asp:TreeNode Text="Naveen" Value="Naveen"></asp:TreeNode>
+                                        <asp:TreeNode Text="Sivaji" Value="Sivaji"></asp:TreeNode>
+                                    </asp:TreeNode>
+                                </Nodes>
+                                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                <ParentNodeStyle Font-Bold="False" />
+                                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                            </asp:TreeView>
+                        </td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="auto-style35">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style32">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="auto-style35">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style33">
+                            <asp:TreeView ID="TreeView4"  Height="34px" ImageSet="Contacts" NodeIndent="10" Width="93px">
+                                <HoverNodeStyle Font-Underline="False" />
+                                <Nodes>
+                                    <asp:TreeNode Text="Home" Value="Home"></asp:TreeNode>
+                                </Nodes>
+                                <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                                <ParentNodeStyle Font-Bold="True" ForeColor="#5555DD" />
+                                <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                            </asp:TreeView>
+                        </td>
+                        <td class="auto-style31"></td>
+                        <td class="auto-style31"></td>
+                        <td class="auto-style31"></td>
+                        <td class="auto-style31"></td>
+                        <td class="auto-style36"></td>
+                    </tr>
+                   
+                   
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
