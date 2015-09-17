@@ -75,17 +75,11 @@
             color: #800000;
         }
     </style>
-<script type="text/javascript">
-function validate()
-{
-var a=document.getElementById('ID').value;
-var b=document.getElementById('pass').value;
-alert("you have entered Email ID : "+a+"   and  password : " + b);
-}
-</script>
+
+
 </head>
 <body>
-    <form id="form1" >
+   <form name="myForm" action="map.html" method="get" >
     <div>
     
         <table class="auto-style1" style="background-image: url('img/logo.jpg'); font-size: 8px">
@@ -95,41 +89,33 @@ alert("you have entered Email ID : "+a+"   and  password : " + b);
                 </td>
             </tr>
         </table>
-    <table alin="center">
-<tr><td width="500"></td><td><td><a href="map.html"><input type="text" value= "MAP and Weather Report"></a>
-</table>
-    </div>
-        <table class="auto-style4">
-            <tr>
-                <td class="auto-style5">
-                    <h1>Login Page</h1>
-                </td>
-            </tr>
-        </table>
-        <table class="auto-style4">
-            <tr>
-                <td class="auto-style12"></td>
-                <td class="auto-style11">Email ID</td>
-                <td class="auto-style10">:</td>
-                <td class="auto-style9">
-                    <input type="text" id="ID">
-                </td>
-                <td class="auto-style9"></td>
-            </tr>
-            <tr>
-                <td class="auto-style13"></td>
-                <td class="auto-style17">Password</td>
-                <td class="auto-style15">:</td>
-                <td class="auto-style16">
-                    <input type="text" id="pass" TextMode="Password">
-                </td>
-                <td class="auto-style16"></td>
-            </tr>
-            <tr>
-                <td class="auto-style13"></td>
-                <td class="auto-style14"></td>
-                <td class="auto-style15">
-          <input type="button" ID="Button1" value="Login" onclick="validate()" CssClass="auto-style18" />
+    <section class="container">
+        <div class="login">
+             
+           
+             <h1>Login</h1> 
+            <form name="f1" method="get" action="mydirections.html">
+                <p>
+                    <input type="text" id="un" name="login" value="" placeholder="Username or Email">
+                </p>
+                <p>
+                    <input type="password" id="pwd" name="password" value="" placeholder="Password">
+                </p>
+                <p>
+                  <button id="button" name="redirect" value="login" style="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 16px; background-color: #72A4D2;" onClick="redirect1()">Login
+
+    <script type="text/javascript">
+    function redirect1()
+    {
+	 var Username= document.getElementById("un");
+	alert("You are logged in as :"+Username.value);
+	var un= document.getElementById("un");
+	 window.localStorage.setItem("username" , un.value);
+	 
+    var url = "mydirections.html";
+    window.location(url);
+    }
+                      </script></button></p>
                 </td>
                 <td class="auto-style16">
                     <a href="register.html" >Forgot Password</a>
@@ -147,7 +133,7 @@ alert("you have entered Email ID : "+a+"   and  password : " + b);
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style6">&nbsp;</td>
                 <td class="auto-style8">
-            <a href="register.html"> <input type="button"  Height="37px" value="Create Account" /></a>
+            <a href="register.html">Create Account</a>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

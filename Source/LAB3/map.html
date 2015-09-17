@@ -76,6 +76,8 @@ background:#FFA500;
 <tr><td width="500"></td><td>
 <a href="login.html"><input type="button" value="Home"</a></td></tr></table>
 
+<h1 id="heading">EmailID :</h1>
+
 <div class="wrapp" ng-controller="googlemapoutput">
          <div class="row">
 		 <label> Source State</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -123,6 +125,11 @@ angular.module('GoogleDirection', [])
     });
     var directionsService = new google.maps.DirectionsService();
     $scope.initialize = function () {
+   var ser = window.location.search;
+	String(ser);
+	var fields = String(ser).split("&");
+	var data = String(fields[0]).split("=");
+	document.getElementById("heading").innerHTML = "EMAIL ID: "+data[1];
           var pos = new google.maps.LatLng(0, 0); 
           var mapOptions = {
                 zoom: 3,

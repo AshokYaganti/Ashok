@@ -69,9 +69,19 @@
         }
     </style>
 <script type="text/javascript">
+
 function validate()
 {
-    alert("registered successfully");
+var a=document.getElementById('a').value;  
+var b=document.getElementById('b').value; 
+var c=document.getElementById('c').value; 
+
+
+
+alert("Data is Name : "+a+"   and  b : " + emailid+" and mobilenum : " +c);
+ 
+alert("registered successfully");
+
 }
 
 </script>
@@ -104,7 +114,7 @@ function validate()
                 <td class="auto-style9">Name</td>
                 <td class="auto-style8">:</td>
                 <td class="auto-style16">
-                    <input type="text">
+                    <input type="text" id="a">
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -113,7 +123,7 @@ function validate()
                 <td class="auto-style9">Email ID</td>
                 <td class="auto-style8">:</td>
                 <td class="auto-style16">
-                     <input type="text">
+                     <input type="text" id="b">
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -140,7 +150,7 @@ function validate()
                 <td class="auto-style9">Mobile No</td>
                 <td class="auto-style8">:</td>
                 <td class="auto-style16">
-                    <input type="text">
+                    <input type="text" id="c">
                 </td>
                 <td>&nbsp;</td>
             </tr>
