@@ -1,0 +1,54 @@
+<ion-side-menus>
+
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+            <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <header class="bar bar-header bar-positive">
+            <h1 class="title">Menu</h1>
+        </header>
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/app/marketbreath" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'market.breath' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/majormarkets" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'market.major' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/majorindexes" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'market.index' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#" onClick="alert('Deshabilitat');" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'us.industry' | translate}}
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/sectors" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'sectors' | translate}}
+                </ion-item>
+				
+				  <ion-item nav-clear menu-close href="#/app/singleton" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'singleton' | translate}}
+                </ion-item>
+				
+				 <ion-item nav-clear menu-close href="#/app/shares" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'Mixin' | translate}}
+                </ion-item>
+				 <ion-item nav-clear menu-close href="#/app/customer" class="item-icon-left">
+                    <i class="icon ion-clipboard"></i>
+                    {{'factory' | translate}}
+                </ion-item>
+				
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
